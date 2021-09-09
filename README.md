@@ -50,9 +50,9 @@ hier de naam van de pagina
 
 ### de hele pagina: 
 <img src="images/breakdownschets-1.jpeg" width="375px" alt="breakdown van de hele pagina">
-<img src="images/breakdownschets-2.jpeg" width="375px" alt="breakdown van de hele pagina">
+<!-- <img src="images/breakdownschets-2.jpeg" width="375px" alt="breakdown van de hele pagina">
 <img src="images/breakdownschets-3.jpeg" width="375px" alt="breakdown van de hele pagina">
-<img src="images/breakdownschets-4.jpeg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdownschets-4.jpeg" width="375px" alt="breakdown van de hele pagina"> -->
 
 ### dynamisch deel (bijv menu): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
