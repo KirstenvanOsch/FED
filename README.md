@@ -1,28 +1,18 @@
 # Procesverslag
-Markdown is een simpele manier om HTML te schrijven.  
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
-
-
-
+Dit procesverslag laat de voortgang en ontwikkeling zien voor het vak Frontend development. In dit procesverslag wordt beschreven welke stappen zijn genomen in ontwikkeling tot het eindproduct. Het eindproduct zijn 2 uitgewerkte webpagina's van een bestaande webpage, nagemaakt in HTML, CSS en Javascript.
 
 ## Jij
 
 <details open>
-<summary>uitwerken voor kick-off werkgroep</summary>
-
 ### Auteur:
 Kirsten van Osch
 
 #### Je startniveau:
-Rood
+Ik gok dat ik op niveau Rood zit, maar heb ambitie om uiteindelijk zwart te bereiken
 
 #### Je focus:
-Responsive
+Ik ben nog niet helemaal zeker over welke focus ik kies, want zowel responsiveness als surface plane vind ik interessant om te bestuderen. Mijn eerste ingeving is om me te focussen op responsiveness omdat ik dat nu nog een groot vraagstuk vind en ik het een uitdaging vind om dit uiteindelijk onder de knie te hebben. 
  
 </details>
 
@@ -36,15 +26,16 @@ Responsive
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+Ik heb ervoor gekozen om de website van een platenlabel en eventorganisator Liquicity na te maken
+https://liquicity.com/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/liquicity-smallscreen.jpg" width="375px" alt="Homepage smallscreen Liquicity website">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/liquicity-smallscreen-detail.jpg" width="375px" alt="Detailpagina webstore Liquicity">
  
 </details>
 
