@@ -31,7 +31,7 @@ https://liquicity.com/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/liquicity-smallscreen.jpg" width="375px" alt="Homepage smallscreen Liquicity website">
+<img src="images/liquicity-smallscreen.jpeg" width="375px" alt="Homepage smallscreen Liquicity website">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
