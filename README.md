@@ -72,7 +72,8 @@ hier de naam van de pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+het maken van een breakdown schets ging me vrij makkelijk af, vervolgens de html opzetten was ook nog geen probleem. Ik heb even wat moeilijkheden gehad met javascript, want dat was een beetje weggezakt. 
+
 
 
 ### Agenda voor meeting
@@ -88,10 +89,9 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Maak meer comments bij de code
+- Kies voor een eenheid (het liefst em) en wees daar consequent in. 
+- maak gebruik van de css selectoren. 
 
 </details>
 

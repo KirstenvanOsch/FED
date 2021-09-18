@@ -22,10 +22,10 @@
 	<!-- Navigatie menu  -->
 
 	<header>
-		<H1>Liquicity</H1>
+		<h1>Liquicity</h1>
 		<button>Menu</button>
 
-		<nav>
+		<nav class="navigatieMenu">
 			<ul>
 				<li> <a href="">Store</a> </li>
 				<li><a href="">Events</a></li>
@@ -61,8 +61,8 @@
 			<p>+ more special features coming soon!</p>
 
 
-			<a href="">Monthly subscription</a>
-			<a href="">annual subscription</a>
+			<div class="buttons-subscription"><a href="">Monthly subscription</a>
+				<a href="">annual subscription</a></div>
 			<img src="images/liquicity-astronauts.png" alt="Liquicity astronaut afbeelding">
 		</section>
 		<!-- //Section met upcoming events //  -->
@@ -74,33 +74,35 @@
 				<li>
 					<a href="">
 						<h3>Liquicity Festival 2022</h3>
-						<img src="" alt="afbeelding liqicity festival">
+						<img src="images/11-Liquicity-photo-by-Danielle-van-der-Veeken-660x913.jpg"
+							alt="afbeelding liqicity festival">
 						<p>16 Juli 2022</p>
 					</a>
 				</li>
 				<li>
 					<a href="">
 						<h3>Prague</h3>
-						<img src="" alt="afbeelding liqicity Praag">
+						<img src="images/liquicity-scene.jpg" alt="afbeelding liqicity Praag">
 						<p>18 September 2021</p>
 					</a>
 				</li>
 				<li>
 					<a href="">
 						<h3>Bratislava</h3>
-						<img src="" alt="Afbeelding Liqicity Bratislava">
+						<img src="images/foto-publiek.jpg" alt="Afbeelding Liqicity Bratislava">
 						<p>25 September 2021</p>
 					</a>
 
 
 				</li>
 				<li><a href="">
-						<img src="" alt="afbeelding Liquicity London">
+						<h3>London</h3>
+						<img src="images/publiek.jpg" alt="afbeelding Liquicity London">
 						<p>13 November 2021</p>
 					</a></li>
-				<a href="">View all events</a>
-			</ul>
 
+			</ul>
+			<a href="">View all events</a>
 
 		</section>
 
@@ -110,11 +112,11 @@
 			<h2>Merchandise</h2>
 			<ul>
 				<li>
-					<a href=""><img src="" alt="afbeelding merchandise"></a>
+					<a href=""><img src="images/merch.jpg" alt="afbeelding merchandise"></a>
 				</li>
-				<li><a href=""><img src="" alt="aflbeelding merchendise"></a></li>
-				<li><a href=""><img src="" alt="aflbeelding merchendise2"></a></li>
-				<li><a href=""> <img src="" alt="aflbeelding merchendise3"></a></li>
+				<li><a href=""><img src="images/merch2.jpg" alt="aflbeelding merchendise"></a></li>
+				<li><a href=""><img src="images/merch3.jpg" alt="aflbeelding merchendise2"></a></li>
+				<li><a href=""> <img src="images/merch4.jpg" alt="aflbeelding merchendise3"></a></li>
 			</ul>
 			<a href="">Go to the Liquicity store</a>
 
@@ -123,7 +125,12 @@
 		<!-- //Section Aftermovie en nieuw gereleasde muziek // -->
 		<section>
 			<h2>Aftermovie</h2>
-			<video src=""></video>
+			<div class="youtube">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/3CB_kYTqswk"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
 			<a href="">View all music</a>
 		</section>
 
@@ -132,15 +139,10 @@
 		<section>
 			<h2>Subscribe to the Liquicity Mailing for everything drum&bass</h2>
 			<p>You can select topics of interest so you never receive something you don’t like.</p>
-			<a href="">Subscribe</a>
+			<a href="">SUBSCRIBE</a>
+			<img src="./images/Liquicity2019Sunday-LennartZwaanPhotography-132.jpg" alt="Stage">
 		</section>
 
-		<!-- //Links naar Spotify en Apple Music met een stuk tekst // -->
-		<section>
-			<h2>Take Liquicity with you wherever you go with the official playlists.</h2>
-			<a href=""><img src="" alt="Link Spotify"></a>
-			<a href=""><img src="" alt="Link Apple Music"></a>
-		</section>
 	</main>
 
 
@@ -149,10 +151,10 @@
 	<footer>
 
 		<ul>
-			<li><a href=""><img src="" alt="Facebook"></a></li>
-			<li><a href=""><img src="" alt="Instagram"></a></li>
-			<li><a href=""><img src="" alt="Youtube"></a></li>
-			<li><a href=""><img src="" alt="Spotify"></a></li>
+			<li><a href=""><img src="./images/Icon_Facebook_Wit.png" alt="Facebook"></a></li>
+			<li><a href=""><img src="./images/Icon_Instagram_Wit.png" alt="Instagram"></a></li>
+			<li><a href=""><img src="./images/Icon_YouTube_Wit.png" alt="Youtube"></a></li>
+			<li><a href=""><img src="./images/Icon_Spotify_Wit.png" alt="Spotify"></a></li>
 		</ul>
 		<ul>
 			<li><a href="">Privacy Policity</a></li>
@@ -161,7 +163,9 @@
 			<li><a href="">Contact</a></li>
 		</ul>
 		<p>© 2008 – 2021 Liquicity</p>
-		<video src=""><img src="" alt="Logo Liquicity"></video>
+		<video autoplay muted src="images/Liquicity_Footer.mp4"></video>
+		<img src="images/Liquicity-Logo-250-3.png" alt="Logo Liquicity">
+
 	</footer>
 
 
