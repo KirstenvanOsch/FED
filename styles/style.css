@@ -5,14 +5,22 @@
   box-sizing: border-box;
 }
 
+/****/
+/*********************************************************************************** Algemene stijlen */
+/****/
 body {
   font-family: "Source Sans Pro", Roboto;
   margin: 0;
-  width: 100%;
+  width: 100vw;
   height: auto;
+
 
 }
 
+body.toonMenu {
+  transform: translateX(50%);
+  transition: 0.5s;
+}
 
 img {
   width: 100%;
@@ -32,7 +40,10 @@ h2 {
   display: inline-block;
 }
 
-/* Navigatie */
+/****/
+/**************************************************************************************************************HEADER*/
+/****/
+
 header {
   position: relative;
   width: 100vw;
@@ -41,7 +52,9 @@ header {
 
 }
 
-
+/****/
+/*selecteerd de link en geeft deze een afmeting*/
+/****/
 nav a:first-of-type {
   padding: 1em;
   width: 10em;
@@ -53,6 +66,10 @@ a img {
   object-fit: contain;
 }
 
+/****/
+/*Navigatie balk, door positie absolute met daarbij 
+een top:0 left&right:0 komt de navigatiebalk bovenin te staan*/
+/****/
 nav {
   position: absolute;
   z-index: 2;
@@ -63,7 +80,6 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 15em;
 
 }
 
@@ -79,6 +95,9 @@ nav p {
 
 }
 
+/****/
+/*met deze code wordt de menubalk buiten beeld geplaatst*/
+/****/
 nav ul {
   position: fixed;
   top: 0;
@@ -90,19 +109,20 @@ nav ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.125em;
+  gap: 0.5em;
   background-color: white;
   align-items: center;
-  justify-content: center;
   max-width: 100vw;
   transform: translateX(-100%);
 
 }
 
-
+/****/
+/*de class toonMenu wordt toegevoegd met JS, waarna de menubalk zichtbaar wordt*/
+/****/
 nav.toonMenu ul {
-  transform: translateX(0);
   transition: 0.5s;
+  height: 100vh;
 }
 
 nav ul a {
@@ -110,20 +130,26 @@ nav ul a {
   font-size: 2em;
   font-weight: bold;
   color: black;
+  padding-top: 1em;
 
 }
+
+/****/
+/*bij een scherm groter dan 992px is de menubalk zichtbaar op het scherm en verdwijnt de menu button*/
+/****/
 
 @media screen and (min-width: 62em) {
   nav ul {
     position: sticky;
+    z-index: 3;
     top: 0;
     right: 0;
     flex-direction: row;
     align-items: flex-start;
     background-color: transparent;
     transform: none;
+    padding-top: 1em;
 
-    padding: 1em;
 
   }
 
@@ -140,7 +166,9 @@ nav ul a {
   }
 }
 
-
+/****/
+/*Hier wordt de afbeelding van het logo in het midden van het scherm geplaatst, met de z-index van 1 wordt de afbeelding boven de video geplaatst*/
+/****/
 header>img {
   position: absolute;
   top: calc(50% - 5em);
@@ -158,24 +186,19 @@ video {
   object-fit: cover;
 }
 
+/***********************************************************************************************************************/
+/*MAIN*/
+/****/
 
 
-main {
-  margin: 0;
-  max-width: 100vw;
-
-}
-
-/* Section Subscriptions  */
+/****/
+/*Section 1 SUBSCRIPTION*/
+/****/
 
 section:first-of-type {
   background-color: black;
   margin: 0;
-  padding: 1.5em;
-}
-
-section:first-of-type>* {
-  padding: 0.5em;
+  padding: 3.5em;
 }
 
 section:first-of-type ul {
@@ -190,23 +213,25 @@ section:first-of-type li {
 section:first-of-type p {
   font-weight: bold;
   padding: 1em;
+  padding-top: 0;
+  margin: 0;
   color: white;
 }
 
 
 section:first-of-type H2 {
-  padding: 2em;
-  margin-top: 0;
+  padding: 0;
+  margin-top: 0.225em;
   color: white;
 
 }
 
-section:first-of-type {
-  padding: 0;
 
-}
-
-@media screen and (min-width:25em) {
+/****/
+/*Bij een scherm groter dan 400px krijgen de a elementen die in de div met de class button-subscription een display flex en komen hierdoor 
+naast elkaar te staan*/
+/****/
+@media screen and (min-width:20em) {
 
   .buttons-subscription {
     display: flex;
@@ -217,8 +242,11 @@ section:first-of-type {
   }
 }
 
-section:first-of-type a {
-  flex-direction: row;
+/****/
+/*hier worden de a elementen geselecteerd waarvan de parent element een div is in de eerste section*/
+/****/
+section:first-of-type div>a {
+
   display: block;
 
   padding: 0.75em 2.5em;
@@ -243,19 +271,24 @@ section:first-of-type img {
 
 }
 
+/****/
+/*Bij een scherm groter dan 800px komt er op de section een grid*/
+/****/
+
 @media screen and (min-width:50em) {
   section:first-of-type {
     display: grid;
-    padding: 6em;
+    padding: 4em;
     grid-template-columns: 1fr 1fr 10px 1fr 1fr;
     grid-template-rows: repeat(5, min-content);
     align-items: center;
 
   }
 
-  section:first-of-type h2 {
+  section:first-of-type>h2 {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 5;
+    margin: 0;
     padding: 0;
     font-size: 3em;
 
@@ -265,6 +298,8 @@ section:first-of-type img {
     grid-column-start: 1;
     grid-column-end: 3;
     display: inline-block;
+    margin: 0;
+    padding: 0.225em;
     grid-row-start: 2;
 
   }
@@ -274,6 +309,10 @@ section:first-of-type img {
     grid-column-start: 1;
     grid-column-end: 3;
 
+  }
+
+  section:first-of-type li {
+    padding: 0.225em;
   }
 
   section:first-of-type img {
@@ -297,7 +336,7 @@ section:first-of-type img {
 }
 
 
-/*Volgende sectie EVENTS ************/
+/************************************************************************************************Section 2  EVENTS ************/
 
 section:nth-of-type(2) {
   position: relative;
@@ -420,6 +459,7 @@ section:nth-of-type(3)>a {
   width: 10em;
   height: 3em;
   margin-top: 1em;
+  padding: 1em;
   text-decoration: none;
   color: white;
   background-color: #F7004A;
@@ -623,3 +663,174 @@ footer li img {
 
 
 /*EVENTS PAGINA! *****************************************************************************************************/
+
+#event-pagina H2 {
+  color: black;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+#event-pagina p {
+  color: black;
+  padding: 0;
+  margin: 0;
+  margin-left: 0.5em;
+  line-height: 1.5em;
+  display: block;
+}
+
+#event-pagina li a {
+  padding: 0;
+  background-color: white;
+}
+
+#event-pagina li a:first-of-type {
+  background-color: transparent;
+
+}
+
+.event-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+#event-pagina .events>a {
+
+  padding: 1em;
+  width: 30%;
+  position: relative;
+  left: calc(50% - 5em);
+
+  display: flex;
+  width: 10em;
+  height: 3em;
+  margin-top: 1em;
+  text-decoration: none;
+  color: white;
+  background-color: #F7004A;
+  font-size: 1em;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+
+  border-radius: 0.125em;
+}
+
+#event-pagina .event-buttons a {
+  padding: 1em;
+  width: 30%;
+
+}
+
+#event-pagina .event-buttons a:first-of-type {
+  background-color: blue;
+}
+
+#event-pagina .event-buttons a:last-of-type {
+  background-color: green;
+}
+
+#event-pagina ul {
+  padding: 0;
+  z-index: 3;
+
+}
+
+body#event-pagina header {
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
+
+}
+
+#event-pagina nav {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 1em;
+}
+
+#event-pagina nav a {
+  color: black;
+}
+
+#event-pagina nav a:first-of-type {
+  padding: 0;
+}
+
+#event-pagina nav li {
+  padding: 0.5em;
+}
+
+#event-pagina header img.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
+}
+
+@media screen and (min-width: 62em) {
+
+  #event-pagina nav p {
+    display: none;
+
+  }
+}
+
+#event-pagina section {
+  display: inline;
+  background-color: white;
+  padding: 3em;
+}
+
+#event-pagina h1 {
+  position: absolute;
+  left: calc(55vw - 2em);
+  bottom: 1em;
+
+  font-weight: bold;
+  font-size: 4em;
+
+  color: white;
+  z-index: 2;
+}
+
+#event-pagina section ul {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
+  gap: 1.5em;
+  padding: 0.5em;
+
+}
+
+#event-pagina .events li {
+  position: relative;
+  height: auto;
+  max-width: 24em;
+  /* padding: 0.5em; */
+  width: 95vw;
+  align-self: center;
+
+
+
+  background-color: gainsboro;
+  list-style: none;
+}
+
+#event-pagina .events li img {
+
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
