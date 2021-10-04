@@ -26,6 +26,13 @@ function navigatieTerug() {
 
 }
 
+function cursorVerandering() { 
+    console.log("muis"); 
+    body.classList.add("cursor"); 
 
+    setTimeout(function timeOut(){ body.classList.remove("cursor")} , 5000);
+}
+
+body.addEventListener("mousedown", cursorVerandering);
 menuButton.addEventListener("click", toggleMenu); 
 terugToggle.addEventListener("click", navigatieTerug); 

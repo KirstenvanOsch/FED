@@ -16,6 +16,11 @@ body {
 
 }
 
+.cursor {
+  cursor: url("../images/cursor-rakket.cur"), auto;
+
+}
+
 @media screen and (max-width: 62em) {
 
   body.toonMenu {
