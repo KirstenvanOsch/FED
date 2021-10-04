@@ -16,7 +16,7 @@ terugToggle.classList.add("terugKnop")
 }
 
 function navigatieTerug() { 
-    if (navigatieMenu.classList.contains("toonMenu") +  (body.classList.contains("toonMenu"))) { 
+
         console.log("div container")
         navigatieMenu.classList.remove("toonMenu"); 
         body.classList.remove("toonMenu");
@@ -26,6 +26,6 @@ function navigatieTerug() {
 
 }
 
-}
+
 menuButton.addEventListener("click", toggleMenu); 
 terugToggle.addEventListener("click", navigatieTerug); 

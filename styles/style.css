@@ -104,6 +104,7 @@ nav p {
 
 }
 
+
 /****/
 /*met deze code wordt de menubalk buiten beeld geplaatst*/
 /****/
@@ -145,8 +146,6 @@ nav ul a {
   color: black;
   padding-top: 2em;
 
-
-
 }
 
 .terugKnop {
@@ -184,6 +183,13 @@ nav ul a {
     font-size: 1em;
     padding: 1em;
 
+  }
+
+  nav ul a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    
   }
 
   nav p {
@@ -713,16 +719,6 @@ footer li img {
   display: block;
 }
 
-#event-pagina li a {
-  padding: 0;
-  background-color: white;
-}
-
-#event-pagina li a:first-of-type {
-  background-color: transparent;
-
-}
-
 .event-buttons {
   display: flex;
   flex-direction: row;
@@ -839,24 +835,23 @@ body#event-pagina header {
 }
 
 #event-pagina section ul {
+
   background-color: white;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(28em, 1fr));
   gap: 1.5em;
-  padding: 0.5em;
+  padding: 1em;
+  align-items: center;
 
 }
 
-#event-pagina .events li {
-  position: relative;
-  height: auto;
-  max-width: 24em;
-  /* padding: 0.5em; */
-  width: 95vw;
-  align-self: center;
 
+#event-pagina .events li {
+  max-width: 30em;
   background-color: gainsboro;
   list-style: none;
+  align-self: center;
+  justify-self: center;
 }
 
 #event-pagina .events li img {
