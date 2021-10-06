@@ -16,6 +16,9 @@ body {
 
 }
 
+/****/
+/*easter egg */
+/****/
 .cursor {
   cursor: url("../images/cursor-rakket.cur"), auto;
 
@@ -416,7 +419,7 @@ section:nth-of-type(2) h2 {
 
 section:nth-of-type(2) ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
 }
 
 section:nth-of-type(2) li {
@@ -428,7 +431,6 @@ section:nth-of-type(2) li {
 }
 
 
-
 section:nth-of-type(2) img {
   position: absolute;
   object-fit: cover;
@@ -436,6 +438,7 @@ section:nth-of-type(2) img {
   height: 100%;
 
 }
+
 
 section:nth-of-type(2) img:hover {
   transform: scale(1.2);
@@ -483,11 +486,14 @@ section:nth-of-type(2)>a {
 
 }
 
+
 section:nth-of-type(2)>a:hover {
   color: #F7004A;
   background-color: white;
   border: solid #F7004A;
 }
+
+
 
 /*Section Merchandise **********/
 
@@ -511,8 +517,13 @@ section:nth-of-type(3) h2 {
 
 section:nth-of-type(3) li {
   max-width: 100vw;
-  padding: 0.5em;
+  padding: 2.5em;
 
+}
+
+section:nth-of-type(3) li:hover {
+  transform: scale(1.02);
+  transition: 0.2s ease;
 
 }
 
@@ -520,7 +531,10 @@ section:nth-of-type(3) img {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
 
+section:nth-of-type(3) img:hover {
+  box-shadow: 0.5em 0.5em 0.5em grey;
 }
 
 section:nth-of-type(3)>a {
@@ -609,7 +623,7 @@ section:nth-of-type(5) {
   position: relative;
   width: 100%;
   height: 30em;
-  margin-top: 1em;
+  margin-top: 5em;
 }
 
 section:nth-of-type(5) img {
